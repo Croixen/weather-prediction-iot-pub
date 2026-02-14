@@ -81,7 +81,7 @@ uint64_t power_manager_calculate_sleep_duration(void) {
     uint64_t current_time_ms = power_manager_get_time_ms();
     
     if (pm_state.next_inference_time_ms == 0) {
-        pm_state.next_inference_time_ms = current_time_ms + (ONE_HOUR_US * 1000);
+        pm_state.next_inference_time_ms = current_time_ms + (ONE_HOUR_US / 1000);
     }
     
     int64_t remaining_ms = pm_state.next_inference_time_ms - current_time_ms;
