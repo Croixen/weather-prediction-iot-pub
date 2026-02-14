@@ -1,0 +1,29 @@
+# Build output
+/build/
+sdkconfig.old
+sdkconfig.defaults
+
+/main/certs/
+
+# Automatically generated files
+sdkconfig
+CMakeLists.txt.user
+*.bin
+*.elf
+*.map
+*.log
+
+# VSCode & CLion
+.vscode/
+.idea/
+*.code-workspace
+
+# ESP-IDF tools and temporary stuff
+.espressif/
+dist/
+tmp/
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
